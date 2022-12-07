@@ -22,4 +22,5 @@
  
 ![Diagrama de flujo](https://user-images.githubusercontent.com/111539493/206243593-f2c489be-cb49-4776-b72d-d419bf197402.png)
 
-
+##  ⿻Codigo 
+» lo primero a realizar fue declara las macros, las cuales cada una estaba orientada a una funsion.
