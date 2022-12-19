@@ -72,11 +72,62 @@
 ```
 #### » Asignamos las variables y funciones que se usaran.
 ```c
-int var;
+  int var;
   int flag_boton1;
   void secuencia_de_leds(char num);
 ```
+###### ↳ Esto es lo que esta dentro del void.
+```c
+void secuencia_de_leds(char num)
+{
+  led1off;
+  led2off;
+  led3off;
+  led4off;
+  led5off;
+  led6off;
+  led7off;
 
+  switch (num)
+  {
+   case 1:
+    led7on;
+    break;
+
+   case 2:
+    led1on;
+    led6on;
+    break;
+
+   case 3:
+    led1on;
+    led7on;
+    led6on;
+    break;
+
+   case 4:
+    led1on;
+    led3on;
+    led4on;
+    led6on;
+    break;
+
+   case 5:
+    led1on;
+    led3on;
+    led7on;
+    led4on;
+    led6on;
+    break;
+
+   case 6:
+   led1on;
+   led2on;
+   led3on;
+   led4on;
+   led5on;
+   led6on;
+```
 #### » Continuaremos abriendo un while. Dentro de este se preguntara por el boton1 si se esta aprentando y si esto sucede se activara el flag_boton1.
 
 ```c
@@ -87,8 +138,7 @@ while (1)
       flag_boton1 = 1;
     }
 ```
-#### » Luego se abrira otro if el cual pregunta por la flag, si esta en 1 la variable se va a ir aumentando hasta el 7, si llega al 7 volvera al estado del 0.
-Tambien se dara la secuncia_de_leds.
+#### » Luego se abrira otro if el cual pregunta por la flag, si esta en 1 la variable se va a ir aumentando hasta el 7, si llega al 7 volvera al estado del 0.Tambien se dara la secuncia_de_leds.
 
 ```c
 if (flag_boton1 == 1)
@@ -109,4 +159,16 @@ if (boton2 == 0)
       flag_boton1=0;
     }
 ```
-
+#### » Ahora haremos que el boton3 o el boton4 apaaguen todos los leds.
+```c
+if (boton3==0 || boton4==0)
+    {
+      led1off;
+      led2off;
+      led3off;
+      led4off;
+      led5off;
+      led6off;
+      led7off;
+    }
+```
